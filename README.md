@@ -33,3 +33,8 @@ if __name__ == "__main__":
     # Создаем объект Task
     task = Task(id=1, title="Complete the project", status=TaskStatus.IN_PROGRESS)
     print(task)  # Task(id=1, title='Complete the project', status=<TaskStatus.IN_PROGRESS: 'in progress'>)
+@dataclass
+class Task:
+    id: int
+    title: str
+    status: TaskStatus
